@@ -1,0 +1,261 @@
+/* common shared */
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+span {
+    color: #FD6E0A;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #fff8f3;
+}
+
+.menu {
+    display: flex;
+    gap: 3em;
+    margin-right: 3em;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #FD6E0A;
+    border: 0;
+    height: 2.5em;
+    width: 7vw;
+    border-radius: .3em;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #474747;
+}
+
+.menu-content {
+    color: #474747;
+    font-weight: 400;
+}
+
+.logo {
+    margin-left: 2em;
+    font-size: 3em;
+}
+
+/* banner style */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    height: 90vh;
+    background-image: url('./images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #fff8f3;
+    margin-bottom: 0;
+}
+
+.hardy {
+    padding-top: 1.8vh;
+}
+
+.banner-txt {
+    color: #474747;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.banner-title {
+    font-size: 5em;
+}
+
+.banner-description {
+    font-size: .9em;
+    color: #474747;
+    font-weight: 300;
+    padding: 2vh 0 2vh 0;
+}
+
+/* about me styles */
+.about-me {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    background-color: #fff8f3;
+    width: 50%;
+    margin: auto;
+}
+
+.about-title {
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 1.5em;
+}
+
+.about-description {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: .9em;
+    color: #474747;
+    font-weight: 300;
+    padding: 2vh 0 0 0;
+}
+
+.about-info {
+    display: flex;
+    margin: 4vh 2vw 4vh 2vw;
+    justify-content: space-around;
+}
+
+.about-info h4 {
+    padding: 1vh 0 1vh 0;
+}
+
+.about-info .menu-content {
+    text-align: center;
+}
+
+/* What I do styles */
+footer {
+    width: 70%;
+    margin: auto;
+    height: 50vh;
+}
+
+.work-description {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: .9em;
+    color: #474747;
+    font-weight: 300;
+    padding: 2vh 0 3vh 0;
+}
+
+.skill-container {
+    display: flex;
+    gap: 2vw;
+    padding-top: 2vh;
+    justify-content: center;
+}
+
+.skills {
+    width: 18%;
+    box-shadow: 5px 5px 20px lightgray;
+    padding: 1vh 0 1vh 1vw;
+    border-radius: 0.5em;
+}
+
+.skill-description {
+    font-size: .85em;
+    color: #474747;
+    font-weight: 200;
+    padding: 1vh 0 1vh 0;
+    width: 80%;
+}
+
+@media screen and (max-width:576px) {
+
+    /* nav styles */
+    nav {
+        height: 8vh;
+        margin: 0;
+    }
+
+    .menu {
+        gap: 2em;
+        margin-right: 2vw;
+        margin-left: 0;
+    }
+
+    .logo {
+        margin-left: 2vw;
+        font-size: 2em;
+    }
+
+    .btn-primary {
+        width: 20vw;
+    }
+
+    /* banner style */
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 90vh;
+        background-image: none;
+    }
+
+    .hardy {
+        width: 20em;
+    }
+
+    .banner-txt {
+        font-size: 2em;
+    }
+
+    .banner-title {
+        font-size: 3em;
+    }
+
+    .banner-description {
+        font-size: .8em;
+    }
+
+    /* about me styles */
+
+    .about-container {
+        background-color: #ffffff;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-description {
+        font-size: .8em;
+    }
+
+    .about-info h4 {
+        font-size: .9em;
+    }
+
+    /* What I do styles */
+    footer {
+        width: 100%;
+    }
+
+    .work-description {
+        width: 80%;
+        font-size: .8em;
+    }
+
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        box-shadow: 5px 5px 20px lightgray;
+        padding: 1vh 0 2vh 0;
+        border-radius: 0.5em;
+    }
+
+    .skill-description {
+        margin: auto;
+        font-size: .8em;
+    }
+
+
+
+}
